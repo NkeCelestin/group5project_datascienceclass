@@ -33,10 +33,6 @@ The dataset used in this project is titled "Group 5-Dataset for Final Project.cs
 - Jide Gboyega Okedeji
 - Mekdes Teka
 
-- | **Names**                    | **Role(s)**                                                                   |
-- 
-| ---------------------------- | ----------------------------------------------------------------------------- |
-
 | **Adejare Ezekiel Sanyaolu** | Exploratory Data Analyst (EDA), Modeling Expert (Predictive Modeling) & Time Series Analyst/Forecaster|
 
 | **Celestin Nkeramihigo**     | Project Lead/Coordinator, Modeling Expert (Predictive Modeling), Report Writer/Documentation Specialist|
