@@ -1,36 +1,44 @@
-**README**
+# README
 
-**Sales and Revenue Analytics and Forecasting for Strategic Business Insights**
+## Project Description
+This project focuses on Sales and Revenue Analytics and Forecasting for Strategic Business Insights. It utilizes machine learning models to analyze historical sales and revenue data, predict monthly units sold, forecast future monthly revenue, and analyze the relationship between unit price and revenue to identify optimal price points.
 
-**Project Description:**
+## Dataset Source
+The dataset used in this project is titled "Group 5-Dataset for Final Project.csv" and contains detailed information about sales transactions, customer demographics, product details, costs, and revenues. The specific source or origin of this dataset is not explicitly stated within the provided notebook.
 
-This project utilizes machine learning and time series analysis to gain strategic business insights from sales and revenue data. The primary goals were to predict monthly units sold, forecast monthly revenue, and analyze the relationship between unit price and revenue across different product categories to identify optimal price points.
+## Summary of Methodology and Findings
 
-**Dataset:**
-The analysis is based on a dataset containing detailed sales transactions, including customer demographics, location, product information, quantity, unit cost, unit price, cost, and revenue. The dataset underwent a comprehensive data pipeline including acquisition, type checking, handling duplicates and outliers, and filling missing values.
+**Methodology:**
+1.  **Data Acquisition & Preparation:** Loaded the dataset, performed initial checks for missing values and data types, handled duplicates and outliers, and imputed missing values.
+2.  **Exploratory Data Analysis (EDA):** Conducted descriptive statistics and various visualizations (bar plots, histograms, scatter plots, line plots, heatmaps) to understand data distributions, relationships between variables, and trends in sales and revenue.
+3.  **Predictive Modeling (Objective 1):** Prepared monthly aggregated data with lag features to predict monthly units sold. Evaluated Linear Regression, Random Forest, and Decision Tree models.
+4.  **Time Series Forecasting (Objective 2):** Aggregated data to monthly and weekly levels for time series analysis. Fitted ARIMA models and explored Exponential Smoothing and Prophet for forecasting monthly and weekly revenue.
+5.  **Unit Price and Revenue Analysis (Objective 3):** Analyzed the relationship between unit price and revenue by product category using visualizations and price binning.
 
-**Objectives and Findings:**
-**1. Predict Monthly Units Sold (Objective 1):**
-**Methodology:** Several regression models (Linear Regression, Random Forest Regressor, Decision Tree Regressor) were attempted using historical features including lagged monthly quantities and the number of unique countries.
-**Findings:** The models did not achieve the target R² score of 0.85. The limited historical data (16 months for this specific analysis) was identified as a significant constraint on the predictive performance of standard regression models.
-**Conclusion:** Achieving a higher accuracy for predicting monthly units sold requires more extensive historical data or potentially exploring more advanced time series forecasting techniques.
+**Findings:**
+- Data cleaning successfully addressed missing values, duplicates, and outliers.
+- EDA revealed key insights into product popularity, revenue drivers (Bikes are the highest revenue despite lower volume), geographical performance (US is dominant), customer demographics, and historical revenue trends (upward trend with recent sharp decline).
+- Predictive models for monthly units sold did not meet the target R² of 0.85, primarily due to limited historical data length.
+- Time series forecasts using ARIMA and Prophet were generated, but their reliability is limited by the short historical data. ARIMA forecasts showed a flat trend after the data decline, while Prophet showed a more optimistic increasing trend.
+- Analysis of unit price and revenue suggested a positive correlation between higher unit prices and higher revenue within product categories, particularly for Bikes. However, identifying truly optimal price points requires further analysis of demand elasticity and profitability.
+- Limited historical data was a significant constraint throughout the modeling and forecasting stages.
 
-**2. Time Series Forecasting for Monthly Revenue (Objective 2):**
-**Methodology:** An ARIMA (1, 1, 0) model was implemented to forecast monthly revenue for the next 12 months.
-**Findings:** A 12-month forecast was generated. However, the reliability of the estimates is limited by the small historical dataset (19 months). The model diagnostics also indicated potential issues with assumption violations due to data limitations. The forecast shows a relatively flat trend, which may not fully capture future growth or seasonality.
-**Conclusion:** While time series forecasting is feasible, obtaining more historical data is crucial for improving forecast accuracy and the reliability of the model.
+## Team Member Roles
+(As listed in the notebook)
+- Adejare Ezekiel Sanyaolu
+- Celestin Nkeramihigo
+- Chukwudi Iwundu Paschal
+- Onisotoyin Opia
+- Idrissa Diouf
+- Jide Gboyega Okedeji
+- Mekdes Teka
 
-**3. Unit Price and Revenue Analysis by Product Category (Objective 3):**
-**Methodology:** The relationship between Unit Price and Revenue was analyzed and visualized using scatter plots for different product categories (Accessories, Bikes, Clothing).
-**Findings:** The analysis revealed that Bikes show a strong positive correlation between higher unit prices and higher total revenue, indicating that high-value bike sales are a key revenue driver. For Accessories and Clothing, the relationship was less clear from this aggregated view.
-**Conclusion:** Identifying precise "optimal" price points requires more in-depth analysis, potentially involving price binning, demand elasticity modeling, and profit analysis, which were beyond the scope of this initial visualization.
-
-**Real-World Insights and Recommendations:**
-**Prioritize High-Value Products:** Focus strategic efforts on the Bikes category, as it is the primary revenue generator.
-**Invest in Data Collection:** To improve the accuracy of predictive modeling and time series forecasting, prioritize collecting consistent and comprehensive sales data over a longer period.
-**Refine Pricing Strategies:** Conduct more detailed analysis for Accessories and Clothing to optimize pricing for either revenue or profit, potentially through price testing or granular data analysis.
-**Leverage Geographical Strengths:** Maintain a strong focus on key markets like the United States and explore opportunities in other significant revenue-contributing countries.
-**Targeted Marketing:** Utilize customer demographic insights from the EDA to inform targeted marketing campaigns.
-
-**Addressing the Original Problem:**
-This project successfully applied data analysis and modeling techniques to gain valuable insights into sales and revenue patterns, addressing the initial problem of providing strategic business insights. While data limitations impacted the achievement of the R² target for unit sales prediction, the analysis provided actionable insights into product performance, market dynamics, and the importance of data collection for future forecasting and strategic decision-making.
+- | **Names**                    | **Role(s)**                                                                   |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| **Adejare Ezekiel Sanyaolu** | Exploratory Data Analyst (EDA), Modeling Expert (Predictive Modeling) & Time Series Analyst/Forecaster|
+| **Celestin Nkeramihigo**     | Project Lead/Coordinator, Modeling Expert (Predictive Modeling), Report Writer/Documentation Specialist|
+| **Chukwudi Iwundu Paschal**  | Assistance Project Lead/Coordinator, Time Series Analyst/Forecaster, Data Cleaner/Pre-processor|
+| **Onisotoyin Opia**          | Time Series Analyst/Forecaster, Visualization Specialist|
+| **Idrissa Diouf**            | Data Cleaner/Pre-processor, Report Writer/Documentation Specialist|
+| **Jide Gboyega Okedeji**     | Support/Documentation Specialist, Exploratory Data Analyst (EDA)|
+| **Mekdes Teka**              | Visualization Specialist, Support/Documentation Specialist|
