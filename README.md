@@ -34,11 +34,19 @@ The dataset used in this project is titled "Group 5-Dataset for Final Project.cs
 - Mekdes Teka
 
 - | **Names**                    | **Role(s)**                                                                   |
+- 
 | ---------------------------- | ----------------------------------------------------------------------------- |
+
 | **Adejare Ezekiel Sanyaolu** | Exploratory Data Analyst (EDA), Modeling Expert (Predictive Modeling) & Time Series Analyst/Forecaster|
+
 | **Celestin Nkeramihigo**     | Project Lead/Coordinator, Modeling Expert (Predictive Modeling), Report Writer/Documentation Specialist|
+
 | **Chukwudi Iwundu Paschal**  | Assistance Project Lead/Coordinator, Time Series Analyst/Forecaster, Data Cleaner/Pre-processor|
+
 | **Onisotoyin Opia**          | Time Series Analyst/Forecaster, Visualization Specialist|
+
 | **Idrissa Diouf**            | Data Cleaner/Pre-processor, Report Writer/Documentation Specialist|
+
 | **Jide Gboyega Okedeji**     | Support/Documentation Specialist, Exploratory Data Analyst (EDA)|
+
 | **Mekdes Teka**              | Visualization Specialist, Support/Documentation Specialist|
