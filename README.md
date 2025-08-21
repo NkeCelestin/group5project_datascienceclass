@@ -17,7 +17,7 @@ The dataset used in this project is titled "Group 5-Dataset for Final Project.cs
 
 **Findings:**
 - Data cleaning successfully addressed missing values, duplicates, and outliers.
-- EDA revealed key insights into product popularity, revenue drivers (Bikes are the highest revenue despite lower volume), geographical performance (US is dominant), customer demographics, and historical revenue trends (upward trend with recent sharp decline).
+- EDA revealed key insights into product popularity, revenue drivers (Bikes are the highest revenue despite lower volume), geographical performance (the US is dominant), customer demographics, and historical revenue trends (upward trend with recent sharp decline).
 - Predictive models for monthly units sold did not meet the target R² of 0.85, primarily due to limited historical data length.
 - Time series forecasts using ARIMA and Prophet were generated, but their reliability is limited by the short historical data. ARIMA forecasts showed a flat trend after the data decline, while Prophet showed a more optimistic increasing trend.
 - Analysis of unit price and revenue suggested a positive correlation between higher unit prices and higher revenue within product categories, particularly for Bikes. However, identifying truly optimal price points requires further analysis of demand elasticity and profitability.
@@ -46,3 +46,16 @@ The dataset used in this project is titled "Group 5-Dataset for Final Project.cs
 | **Jide Gboyega Okedeji**     | Support/Documentation Specialist, Exploratory Data Analyst (EDA)|
 
 | **Mekdes Teka**              | Visualization Specialist, Support/Documentation Specialist|
+
+
+### **Team Member Role Summary**
+
+Here is a more detailed summary of the roles and contributions of each team member:
+
+*   **Adejare Ezekiel Sanyaolu:** Played a key role in exploring the dataset through Exploratory Data Analysis (EDA), developing and evaluating Predictive forecasting models, and performing Time Series Analysis and Forecasting for revenue.
+*   **Celestin Nkeramihigo:** Led the project as the Project Lead/Coordinator, overseeing the project's progress. They were also involved in the development of Predictive Models and were responsible for writing and documenting the project report.
+*   **Chukwudi Iwundu Paschal:** Supported the project leadership as the Assistant Project Lead/Coordinator. They were actively involved in the Time Series Analysis and Forecasting sections, handling the crucial tasks of Data Cleaning and Pre-processing to ensure data quality.
+*   **Onisotoyin Opia:** Focused on the Time Series Analysis and Forecasting aspects of the project. They also served as a Visualization Specialist, creating the various plots and charts to illustrate key findings from the data.
+*   **Idrissa Diouf:** Contributed significantly to the Data Cleaning and Pre-processing stages of the project, ensuring the dataset was ready for analysis. They were also involved in writing and documenting the project report.
+*   **Jide Gboyega Okedeji:** Provided valuable Support and Documentation throughout the project. They also contributed to the Exploratory Data Analysis (EDA), helping to uncover initial insights from the data.
+*   **Mekdes Teka:** Served as a Visualization Specialist, responsible for creating informative and insightful visualizations to present the project's findings. They also provided Support and Documentation to the team.
